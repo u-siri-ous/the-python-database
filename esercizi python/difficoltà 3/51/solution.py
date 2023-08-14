@@ -1,5 +1,3 @@
-def es51(ls, c):
-    ls1=[ s for s in ls if not c.lower() in s.lower()]
-    count=len(ls)-len(ls1)
-    ls[:]=ls1
-    return count
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0b1dbc4b797a6a61cdaa9fc67eee3fdf3d51916da92f8c0cacec8c7ebec56da
+size 133

@@ -1,13 +1,3 @@
-def es43(ftesto):
-    somme = []
-    with open(ftesto) as f:
-        for line in f:
-            interi = list(map(int, line.split()))
-            for i, v in enumerate(interi):
-                if i < len(somme):
-                    somme[i] += v
-                else:
-                    for _ in range(i - len(somme)):
-                        somme.append(0)
-                    somme.append(v)
-    return somme
+version https://git-lfs.github.com/spec/v1
+oid sha256:b34128ee7075aad8f538430efa5d248f5a651bb79f8c79b0b8e1226ac62e368e
+size 424

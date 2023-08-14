@@ -1,21 +1,3 @@
-import os
-import os.path
-
-
-def es69(dir, profondita, estensioni):
-    count = 0
-    for f in os.listdir(dir):
-        if '.' == f[0]: continue
-        fn = "{}/{}".format(dir, f)
-        if profondita > 0:
-            if os.path.isdir(fn):
-                count += es69(fn, profondita-1, estensioni)
-            else:
-                count += 1
-        else:
-            if not os.path.isdir(fn):
-                if fn.endswith(tuple(estensioni)):
-                    os.remove(fn)
-                else:
-                    count += 1
-    return count
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb93601fb55885913aac5a6bd51f3d91d07f4942e5719eb4cefac6a41a01edca
+size 573

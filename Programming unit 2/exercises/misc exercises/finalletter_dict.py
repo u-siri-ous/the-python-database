@@ -1,32 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 27 14:53:36 2021
-
-@author: Siria
-"""
-
-'''
-Write a function that takes as an input a list of strings and finds the letter which
-appears more times as the final letter of all the strings in the list
-['apple', 'pear', 'banana', 'peach', 'pineapple'] -> returns 'e'
-'''
-
-def last_letter(stringlist):
-    d = {}
-    for word in stringlist:
-        if word[-1] in d:
-            d[word[-1]] += 1
-        else:
-            d[word[-1]] = 1
-    firstword = stringlist[0]
-    maxkey =  firstword[-1]
-    maxval = d[maxkey]
-    for key in d:
-        if d[key] > maxval:
-            maxkey = key
-            maxval = d[key]
-    return maxkey
-    
-    def criteria(key):
-        return d[key]
-    return max(d, key = criteria)
+version https://git-lfs.github.com/spec/v1
+oid sha256:4715d16e0bb66caa6387b7fcc46cef8e5f9c80d3c1b8fa2619e7ab3bd31d24c4
+size 791

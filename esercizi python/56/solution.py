@@ -1,22 +1,3 @@
-
-
-def es56(tabella):
-    counts = {}
-    mc = 0
-    for r in tabella:
-        for v in r:
-            if v in counts:
-                counts[v] += 1
-            else:
-                counts[v] = 1
-            mc = max(mc, counts[v])
-    maxxes = []
-    for k, v in counts.items():
-        if v == mc:
-            maxxes.append(k)
-    for r in tabella:
-        for i, v in enumerate(r):
-            if v in maxxes:
-                r[i] = '*'
-    maxxes.sort()
-    return maxxes
+version https://git-lfs.github.com/spec/v1
+oid sha256:9fa926d1c8f4eaf6963bc08ad4bf0a18044ec8f19f45d2ffee46c9d4bb3f4ac1
+size 499

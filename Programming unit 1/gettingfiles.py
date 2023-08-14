@@ -1,26 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 30 13:23:13 2021
-
-@author: Siria
-"""
-
-import os
-
-allfiles = {}
-
-def GetFiles(folderName, d):
-    files = os.listdir(folderName)
-    print(files)
-    for f in files:
-        f = folderName + '\\' + f
-        if os.path.isdir(f):
-            GetFiles(f, d)
-            #print(f, '(folder)')
-        else:
-            d[f] = f
-            #print(f, '(file)')
-            
-if __name__ == '__main__':
-    GetFiles(r'C:\Users\Lenovo\Desktop\Analisi & Moduli', allfiles) #raw string works idk 
-    print(list(allfiles.keys))
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a69cb7877b408fc47788a18b84b63585a2c9b4c7ae94aaa7ecfcf352d1e5f5c
+size 589

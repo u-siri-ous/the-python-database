@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 27 11:20:10 2021
-
-@author: Siria
-"""
-
-def text(file):
-    with open(file, "r", encoding = "utf-8") as f:
-        a = f.read()
-        a = a.replace(",", "").replace("\t", "")
-        print(a.split())
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ce5d774d0fd8ec322cea2f73de90a3b5cb3af8dbc19961352a81c2b6e9a798d
+size 257

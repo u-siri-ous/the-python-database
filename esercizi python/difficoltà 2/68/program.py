@@ -1,36 +1,3 @@
-
-import os
-import os.path
-
-def es68(dirs, estensioni):
-    """
-    Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva) es68(dir, estensioni),
-    che deve contare quanti file di certi tipi si trovano in una directory o in una delle sue sottodirectories,
-    e che riceve come argomenti
-        dir: il path della directory in cui cercare
-        estensioni: una lista di stringhe "estensioni" (le ultime lettere del nome dei files che cerchiamo)
-    La funzione deve tornare un dizionario che ha come chiavi le estensioni passate come argomento
-    e come valori il numero di file il cui nome termina in quel modo, solo se > 0
-    (ovvero, se nessun file con una data estensione appare nella directory o nelle sottodirectories
-    la chiave non deve apparire nel dizionario tornato dalla funzione).
-
-    Tests: date alcune directory contenenti file di tipo (ext) diverso, si chiama la funzione per contare alcuni dei tipi di file nelle diverse directory
-    Test: che la funzione sia ricorsiva
-    """
-    # inserite qui il vostro codice
-    count = {ext: 0 for ext in estensioni}
-    for f in os.listdir(dirs):
-        fn = "{}/{}".format(dirs, f)
-        if os.path.isdir(fn):
-            diz = es68(fn, estensioni)
-            for k, v in diz.items():
-                count[k] += v
-        else:
-            for ext in estensioni:
-                if fn.endswith(ext):
-                    count[ext] += 1
-    for k in list(count.keys()):
-        if count[k] == 0:
-            del count[k]
-    return count
-        
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c71edc1e362250e4f68d2d1c9eb114b93ae07e430e02732446b7d9007a332d8
+size 1576

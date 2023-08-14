@@ -1,12 +1,3 @@
-from math import pi
-
-def circle_length(r):
-    circle=r*pi*2
-    return circle
-def circle_area(r):
-    area=pi*r**2
-    return area
-r=input('Circle radius: ')
-r=float(r)
-print('Circumference is: ', circle_length(r))
-print('Area is: ', circle_area(r))
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab67e49065a426d6773c286708b85ba5f1fd8f790049b5726e0715781ec8a472
+size 263

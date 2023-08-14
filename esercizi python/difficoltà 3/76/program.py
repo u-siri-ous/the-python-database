@@ -1,25 +1,3 @@
-
-def es76(parola):
-    '''
-    Si definisca la funzione ricorsiva (o che usa una vostra funzione ricorsiva)  
-    es76(parola), che presa in input una stringa di caratteri  parola restituisce la lista dei 
-    suffissi di parola. Gli elementi della lista devono risultare ordinati per lunghezza decrescente .
-    Si ricorda che un suffisso di una parola e' quello che si ottiene concellando 0 o piu' 
-    caratteri iniziali della parola.
-    Ad esempio per es76("fondamenti") la lista restituita sara'
-    ['fondamenti', 'ondamenti', 'ndamenti', 'damenti', 'amenti', 'menti', 'enti', 'nti', 'ti', 'i']
-    '''
-    lst = []
-    word = str(parola)
-    
-    if len(word) == 1 :
-        lst.append(word)
-        return lst
-    else:
-        lst.append(word)
-        lst.extend(es76(word[1:]))
-    
-    return lst
-
-if __name__ == "__main__":
-    es76('fondamenti')
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3161011ea0eec8989d2fdf0ee6b2d1313699f745bd94aff4d924c4ede72f1d0
+size 883

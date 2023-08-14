@@ -1,12 +1,3 @@
-#program to try out while loops
-
-import random
-
-def guessmyage(v):
-    x = random.randint(0,v)
-    question = "guess my age: "
-    guess = int(input(question))
-    while guess != x:
-        print("F")
-        guess = int(input(question))
-    print("yay")
+version https://git-lfs.github.com/spec/v1
+oid sha256:61c07b3d4723acf79fc53faa24ee5489514d2232768250f0fbad9845d1c5fb20
+size 267

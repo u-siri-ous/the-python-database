@@ -1,7 +1,3 @@
-#Write a function that takes as an input an int and generates a string with the countdown
-#from n to 0. the numbers in the string are separated by a space
-
-def countdown(num):
-    for i in range(num):
-        return num
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1318b4f49cefafae25a35492441dab1c05c46a899f6ab4e35819ac33a711c8b5
+size 228
